@@ -1,0 +1,2 @@
+mvn archetype:generate -B -DarchetypeArtifactId=maven-archetype-archetype  -DgroupId=io.mk.springboot.archetype -DartifactId=maven-springboot-archetype  -Dversion=0.0.1-SNAPSHOT
+

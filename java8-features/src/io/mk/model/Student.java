@@ -5,14 +5,14 @@ public class Student {
 	private int id;
 	private String name;
 	private int marks;
-	private boolean result;
+	private boolean pass;
 
-	public Student(int id, String name, int marks, boolean result) {
+	public Student(int id, String name, int marks, boolean pass) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.marks = marks;
-		this.result = result;
+		this.pass = pass;
 	}
 
 	public int getId() {
@@ -39,12 +39,12 @@ public class Student {
 		this.marks = marks;
 	}
 
-	public boolean isResult() {
-		return result;
+	public boolean isPass() {
+		return pass;
 	}
 
-	public void setResult(boolean result) {
-		this.result = result;
+	public void setResult(boolean pass) {
+		this.pass = pass;
 	}
 
 }

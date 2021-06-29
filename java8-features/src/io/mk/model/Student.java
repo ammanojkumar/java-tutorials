@@ -1,18 +1,16 @@
 package io.mk.model;
 
 public class Student {
-
+	
 	private int id;
 	private String name;
-	private int marks;
-	private boolean pass;
+	private int percentage;
 
-	public Student(int id, String name, int marks, boolean pass) {
+	public Student(int id, String name, int percentage) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.marks = marks;
-		this.pass = pass;
+		this.percentage = percentage;
 	}
 
 	public int getId() {
@@ -31,20 +29,12 @@ public class Student {
 		this.name = name;
 	}
 
-	public int getMarks() {
-		return marks;
+	public int getPercentage() {
+		return percentage;
 	}
 
-	public void setMarks(int marks) {
-		this.marks = marks;
-	}
-
-	public boolean isPass() {
-		return pass;
-	}
-
-	public void setResult(boolean pass) {
-		this.pass = pass;
+	public void setPercentage(int percentage) {
+		this.percentage = percentage;
 	}
 
 }

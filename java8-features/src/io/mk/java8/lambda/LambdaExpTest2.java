@@ -24,7 +24,7 @@ interface TicketCounterC {
 	}
 }
 
-public class TicketCounter {
+public class LambdaExpTest2 {
 
 	public static void main(String[] args) {
 		TicketCounterA tca = () -> System.out.println("Booking ticket..");

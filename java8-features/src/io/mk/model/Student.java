@@ -1,10 +1,13 @@
 package io.mk.model;
 
 public class Student {
-	
+
 	private int id;
 	private String name;
 	private int percentage;
+
+	public Student() {
+	}
 
 	public Student(int id, String name, int percentage) {
 		super();

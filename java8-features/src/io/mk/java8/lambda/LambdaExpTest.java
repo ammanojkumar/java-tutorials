@@ -15,17 +15,14 @@ interface SumCalculator {
 public class LambdaExpTest {
 
 	public static void testSumCalc() {
-		SumCalculator sumCalc = (a, b) -> {
-			System.out.print(a + "+" + b + "=");
-			return a + b;
-		};
-		System.out.println(sumCalc.add(10, 5));
+		SumCalculator sumCalc = (val1, val2) -> val1 + val2;
+
+		int a = 10, b = 5;
+		System.out.println(a + "+" + b + "=" + sumCalc.add(10, 5));
 	}
 
 	public static void testThread() {
-		Runnable runnableLambda = () -> {
-			System.out.println("Runnable with Lambda Expression");
-		};
+		Runnable runnableLambda = () -> System.out.println("Runnable with Lambda Expression");
 		new Thread(runnableLambda).start();
 
 		// Before java 8
@@ -40,13 +37,9 @@ public class LambdaExpTest {
 
 	public static void testComparator() {
 		List<Student> students = ModelUtil.getStudents();
-		Comparator<Student> stuComp = (s1, s2) -> {
-			return s1.getName().compareTo(s2.getName());
-		};
+		Comparator<Student> stuComp = (s1, s2) -> s1.getName().compareTo(s2.getName());
 		Collections.sort(students, stuComp);
-		students.forEach(stu -> {
-			System.out.print(stu.getName() + ", ");
-		});
+		students.forEach(stu -> System.out.print(stu.getName() + ", ")); // Passing consumer param
 		System.out.println(" <= Java 8 sort");
 
 		// Before java 8

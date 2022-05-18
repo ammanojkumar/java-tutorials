@@ -10,15 +10,11 @@ import io.mk.model.Student;
 
 public class ConsumerSupplierPredicate {
 
-	static void printNames(String name) {
-		System.out.println(name);
-	}
-
 	static void testConsumer() { // has accept method
 		Consumer<Student> stuConsumer = stu -> System.out.print(stu.getName() + ":" + stu.getPercentage() + "%, ");
-		List<Student> stuList = ModelUtil.getStudents();
 		stuConsumer.accept(ModelUtil.getStudent());
 
+		List<Student> stuList = ModelUtil.getStudents();
 		stuList.forEach(stuConsumer);
 		System.out.println();
 	}
@@ -42,8 +38,8 @@ public class ConsumerSupplierPredicate {
 	}
 
 	public static void main(String[] args) {
-//		testConsumer();
-//		testSupplier();
+		testConsumer();
+		testSupplier();
 		testPredicate();
 	}
 }

@@ -1,15 +1,19 @@
 package io.mk.java8.stream;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import io.mk.model.Country;
+import io.mk.model.ModelUtil;
+import io.mk.model.Student;
+
 public class MapStreams {
 
-	private static void operateMapJava8(Map<Integer, String> map) {
+	private static void operateMap(Map<Integer, String> map) {
 		System.out.println("OPERATION ON MAP JAVA 8");
 		List<Integer> intList = new ArrayList<>();
 		List<String> strList = map.entrySet().stream().sorted(Map.Entry.comparingByValue())
@@ -21,25 +25,12 @@ public class MapStreams {
 		intList.forEach(System.out::print);
 	}
 
-	private static void operateMap(Map<Integer, String> map) {
-		System.out.println("\n\nOPERATION ON MAP JAVA 7-");
-		List<Integer> intList = new ArrayList<>();
-		List<String> strList = new ArrayList<>();
-
-		for (Map.Entry<Integer, String> ent : map.entrySet()) {
-			intList.add(ent.getKey());
-			strList.add(ent.getValue());
-		}
-
-		Collections.reverse(intList);
-		Collections.sort(strList);
-		System.out.println("Map<Integer, String> to Sorted Reverse key List: " + intList);
-		System.out.println("Map<Integer, String> to Sorted value List: " + strList);
-		System.out.print("Print using forEach: ");
-		for (Integer id : intList) {
-			System.out.print(id);
-		}
+	private static void operateMap2(Map<Integer, Student> map) {
+		map.entrySet().stream().sorted((s1, s2) -> s1.getKey() - s2.getKey()).collect(Collectors
+				.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue, HashMap::new));
 	}
+
+
 
 	public static void main(String[] args) {
 		Map<Integer, String> map = new HashMap<>();
@@ -48,7 +39,16 @@ public class MapStreams {
 		map.put(4, "E");
 		map.put(1, "R");
 		map.put(5, "A");
-		operateMapJava8(map);
 		operateMap(map);
+
+		Map<Integer, Student> map2 = new HashMap<>();
+		map2.put(1, ModelUtil.getStudents().get(0));
+		map2.put(2, ModelUtil.getStudents().get(1));
+		map2.put(3, ModelUtil.getStudents().get(2));
+		operateMap2(map2);
+
+		Map<Integer, Country> map3 = new HashMap<>();
+		map3.put(1, new Country(1, Arrays.asList("EN", "TA", "HN")));
+
 	}
 }

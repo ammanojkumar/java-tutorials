@@ -1,18 +1,24 @@
 package io.mk.java8.methodref;
 
-interface Printable {
-	void printMsg();
+interface Questionable {
+	void askQuestion();
 }
 
 public class StaticMR {
 
-	static void printSomething() {
-		System.out.println("printSomething static method.");
+	static void askYourName() {
+		System.out.println("What is your name?");
+	}
 
+	static void askYourAge() {
+		System.out.println("How old are you?");
 	}
 
 	public static void main(String[] args) {
-		Printable printalbe = StaticMR::printSomething;
-		printalbe.printMsg();
+		Questionable question1 = StaticMR::askYourName;
+		question1.askQuestion();
+
+		Questionable question2 = StaticMR::askYourAge;
+		question2.askQuestion();
 	}
 }

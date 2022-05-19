@@ -1,6 +1,7 @@
 package io.mk.model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -24,5 +25,12 @@ public class ModelUtil {
 		Consumer<Student> printConsumer = stu -> System.out.print(stu.getName() + ":" + stu.getPercentage() + ", ");
 		stuList.forEach(printConsumer);
 		System.out.println();
+	}
+
+	public static List<Country> getCountries() {
+		List<Country> countryList = new ArrayList<>();
+		countryList.add(new Country(1, Arrays.asList("EN","TA")));
+		countryList.add(new Country(2, Arrays.asList("EN","RF")));
+		return countryList;
 	}
 }

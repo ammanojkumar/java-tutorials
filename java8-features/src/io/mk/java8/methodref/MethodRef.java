@@ -6,12 +6,13 @@ interface Car {
 
 public class MethodRef {
 
-	public static void soundHorn() {
+	// Referring this method, when interface method calls
+	public void soundHorn() {
 		System.out.println("Horning...");
 	}
 
 	public static void main(String[] args) {
-		Car car = MethodRef::soundHorn;
+		Car car = new MethodRef()::soundHorn;
 		car.horn();
 	}
 }

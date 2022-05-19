@@ -5,6 +5,7 @@ interface Speakable {
 }
 
 class Welcome {
+	// Referring this constructor, when calling the interface method
 	Welcome(String name) {
 		System.out.print("Welcome " + name);
 	}

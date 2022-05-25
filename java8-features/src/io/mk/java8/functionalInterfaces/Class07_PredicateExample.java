@@ -1,4 +1,4 @@
-package io.mk.java8.lambda;
+package io.mk.java8.functionalInterfaces;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,8 +6,13 @@ import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 import io.mk.model.Item;
+import io.mk.model.ModelUtil;
 
-public class PredicateExample {
+public class Class07_PredicateExample {
+
+//	public interface Predicate<Type> {
+//		boolean test(Type t);
+//	}
 
 //	Predicate<Item> predicate = new Predicate<Item>() {
 //		@Override
@@ -18,13 +23,10 @@ public class PredicateExample {
 
 	static List<Integer> numList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
-	static List<Item> itemList = Arrays.asList(new Item(1, "Tea", 20), new Item(2, "Meal", 50),
-			new Item(3, "Water", 10));
+	static void callPredicate() {
 
-	static void predicateNum() {
-
-		System.out.println("Predicate1: Print all numbers:");
-		Predicate<Integer> predicate1 = n -> n > 4; // test(t) method is implemented. It accepts numbers > 4
+		System.out.println("Predicate1: Print all numbers > 4:");
+		Predicate<Integer> predicate1 = n -> n > 4;
 		Stream<Integer> filter = numList.stream().filter(predicate1); // filter(predicate)
 		filter.forEach(n -> System.out.println(n)); // forEach(consumer)
 
@@ -36,7 +38,7 @@ public class PredicateExample {
 	}
 
 	static void predicateObj() {
-
+		List<Item> itemList = ModelUtil.getItems();
 		System.out.println("Predicate1: Print all Items:");
 		Predicate<Item> predicate1 = item -> true; // test(t) method is implemented
 		Stream<Item> filter = itemList.stream().filter(predicate1); // filter(predicate)
@@ -62,7 +64,7 @@ public class PredicateExample {
 	}
 
 	public static void main(String[] args) {
-		predicateNum();
+		callPredicate();
 		predicateObj();
 		predicateMethods();
 	}

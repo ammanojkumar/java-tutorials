@@ -28,9 +28,11 @@ public class ModelUtil {
 	}
 
 	public static List<Country> getCountries() {
-		List<Country> countryList = new ArrayList<>();
-		countryList.add(new Country(1, Arrays.asList("EN","TA")));
-		countryList.add(new Country(2, Arrays.asList("EN","RF")));
-		return countryList;
+		return Arrays.asList(new Country(1, Arrays.asList("EN", "TA")), new Country(2, Arrays.asList("EN", "RF")));
 	}
+
+	public static List<Item> getItems() {
+		return Arrays.asList(new Item(1, "Tea", 20), new Item(2, "Meal", 50), new Item(3, "Water", 10));
+	}
+
 }

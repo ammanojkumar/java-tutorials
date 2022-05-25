@@ -1,4 +1,4 @@
-package io.mk.java8.lambda;
+package io.mk.java8.functionalInterfaces;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,21 +7,24 @@ import java.util.function.Supplier;
 
 import io.mk.model.Item;
 
-public class SupplierExample {
+public class Class09_SupplierExample {
 
-//		Supplier<String> supplier = new Supplier<String>() {
-//			@Override
-//			public String get() {
-//				return "value";
-//			}
-//		};
+//	public interface Supplier<Type> {
+//		public Type get();
+//	}
 
-	static void supplyObj() {
+//	Supplier<String> supplier = new Supplier<String>() {
+//		@Override
+//		public String get() {
+//			return "value";
+//		}
+//	};
 
+	static void callSupplier() {
 		Item randomItem = new Item(new Random().nextInt(), "Random", 321);
 
-		Supplier<Item> supplier1 = () -> randomItem;
-		Supplier<Item> supplier2 = Item::new;
+		Supplier<Item> supplier1 = () -> randomItem; // Lambda
+		Supplier<Item> supplier2 = Item::new; // constructor reference
 		System.out.println(supplier1.get().getId());
 		System.out.println(supplier2.get().getId());
 
@@ -34,6 +37,6 @@ public class SupplierExample {
 	}
 
 	public static void main(String[] args) {
-		supplyObj();
+		callSupplier();
 	}
 }

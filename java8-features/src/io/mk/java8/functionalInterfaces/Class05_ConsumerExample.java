@@ -1,11 +1,15 @@
-package io.mk.java8.lambda;
+package io.mk.java8.functionalInterfaces;
 
 import java.util.function.Consumer;
 
 import io.mk.model.ModelUtil;
 import io.mk.model.Student;
 
-public class ConsumerExample {
+public class Class05_ConsumerExample {
+
+//	public interface Consumer<Arg1> {
+//		public void accept(Arg1 s);
+//	}
 
 //	Consumer<Student> consumer = new Consumer<Student>() {
 //		@Override
@@ -14,7 +18,7 @@ public class ConsumerExample {
 //		}
 //	};
 
-	static void consumeObj() {
+	static void callConsumer() {
 		Consumer<Student> stuConsumer = stu -> System.out.print(stu.getName());
 		Consumer<Student> stuConsumerWithPerc = stuConsumer.andThen(st -> System.out.println(st.getPercentage()));
 		stuConsumerWithPerc.accept(ModelUtil.getStudent());
@@ -22,6 +26,6 @@ public class ConsumerExample {
 	}
 
 	public static void main(String[] args) {
-		consumeObj();
+		callConsumer();
 	}
 }

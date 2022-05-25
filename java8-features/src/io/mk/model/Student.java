@@ -40,4 +40,9 @@ public class Student {
 		this.percentage = percentage;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", percentage=" + percentage + "]";
+	}
+
 }

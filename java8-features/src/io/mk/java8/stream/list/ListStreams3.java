@@ -1,4 +1,4 @@
-package io.mk.java8.stream;
+package io.mk.java8.stream.list;
 
 import java.util.List;
 import java.util.stream.Collectors;

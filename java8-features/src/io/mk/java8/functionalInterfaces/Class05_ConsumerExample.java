@@ -7,8 +7,9 @@ import io.mk.model.Student;
 
 public class Class05_ConsumerExample {
 
-//	public interface Consumer<Arg1> {
-//		public void accept(Arg1 s);
+//	Method accept has one argument
+//	public interface Consumer<T> {
+//		public void accept(T t);
 //	}
 
 //	Consumer<Student> consumer = new Consumer<Student>() {

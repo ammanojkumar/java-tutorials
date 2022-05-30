@@ -2,12 +2,9 @@ package io.mk.java8.functionalInterfaces;
 
 import java.util.function.UnaryOperator;
 
-public class Class02_UnaryOperatorExample {
+public class Class03_UnaryOperatorExample {
 
-//	public interface Function<T, R> {
-//		R apply(T t);
-//	}
-
+//	Method apply has one argument and return with same type
 //	public interface UnaryOperator<T> extends Function<T, T> {
 //	}
 

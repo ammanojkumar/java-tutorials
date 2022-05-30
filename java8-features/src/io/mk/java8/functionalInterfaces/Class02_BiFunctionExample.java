@@ -2,10 +2,11 @@ package io.mk.java8.functionalInterfaces;
 
 import java.util.function.BiFunction;
 
-public class Class03_BiFunctionExample {
+public class Class02_BiFunctionExample {
 
-//	public interface BiFunction<Arg1, Arg2, Return> {
-//		Return apply(Arg1 arg1, Arg2 arg2);
+//	Method apply has two arguments and return
+//	public interface BiFunction<T1, T2, R> {
+//		R apply(T1 type1, T2 type2);
 //	}
 
 //	BiFunction<Integer, Integer, String> function = new BiFunction<Integer, Integer, String>() {

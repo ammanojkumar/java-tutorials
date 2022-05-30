@@ -4,13 +4,9 @@ import java.util.function.BinaryOperator;
 
 public class Class04_BinaryOperatorExample {
 
-//	 Difference -> BiFunction allows multiple Types and BinaryOperator allows one Type
-//	public interface BiFunction<Type1, Type2, Return> {
-//		Return apply(Type1 type1, Type2 type2);
-//	}
-
-//	public interface BinaryOperator<Type> extends BiFunction<Type, Type, Type>  {
-//		Type apply(Type type1, Type type2);
+//	Method apply has two arguments and return with same type
+//	public interface BinaryOperator<T> extends BiFunction<T, T, T> {
+//		T apply(T type1, T type2);
 //	}
 
 //	BinaryOperator<String> function = new BinaryOperator<String>() {

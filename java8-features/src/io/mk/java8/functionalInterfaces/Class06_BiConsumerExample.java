@@ -7,8 +7,9 @@ import io.mk.model.Student;
 
 public class Class06_BiConsumerExample {
 
-//	public interface Consumer<Arg1> {
-//		public void accept(Arg1 s);
+//	Method accept has two arguments
+//	public interface Consumer<T1, T2> {
+//		public void accept(T1 t1, T2 t2);
 //	}
 
 //	BiConsumer<Student, Integer> biConsumer = new BiConsumer<Student, Integer>() {

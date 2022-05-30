@@ -6,6 +6,7 @@ import io.mk.model.Student;
 
 public class Class01_FunctionExample {
 
+//	Method apply has one argument and return
 //	public interface Function<T, R> {
 //		R apply(T t);
 //	}

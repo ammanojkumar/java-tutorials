@@ -10,8 +10,9 @@ import io.mk.model.ModelUtil;
 
 public class Class07_PredicateExample {
 
-//	public interface Predicate<Type> {
-//		boolean test(Type t);
+//	Method test has one argument and boolean return 
+//	public interface Predicate<T> {
+//		boolean test(T type);
 //	}
 
 //	Predicate<Item> predicate = new Predicate<Item>() {

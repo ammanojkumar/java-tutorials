@@ -9,6 +9,7 @@ import io.mk.model.Item;
 
 public class Class09_SupplierExample {
 
+//	Method get has only return
 //	public interface Supplier<Type> {
 //		public Type get();
 //	}

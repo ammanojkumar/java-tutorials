@@ -4,14 +4,15 @@ import java.util.function.BiPredicate;
 
 public class Class08_BiPredicateExample {
 
+//	Method test has two arguments and boolean return
 //	public interface BiPredicate<T1, T2> {
 //		boolean test(T1 t1, T2 t2);
 //	}
 
-//	BiPredicate<Integer, Integer> predicate = new BiPredicate<Integer, Integer>() {
+//	BiPredicate<Integer, String> predicate = new BiPredicate<Integer, String>() {
 //		@Override
-//		public boolean test(Integer i1, Integer i2) {
-//			return false;
+//		public boolean test(Integer i1, String i2) {
+//			return true;
 //		}
 //	};
 

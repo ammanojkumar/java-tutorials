@@ -22,7 +22,6 @@ public class Class05_ConsumerExample {
 	static void callConsumer() {
 		Consumer<Student> stuConsumer = stu -> System.out.print(stu.getName());
 		Consumer<Student> stuConsumerWithPerc = stuConsumer.andThen(st -> System.out.println(st.getPercentage()));
-		stuConsumerWithPerc.accept(ModelUtil.getStudent());
 		ModelUtil.getStudents().forEach(stuConsumerWithPerc);
 	}
 

@@ -24,7 +24,7 @@ public class Class06_BiConsumerExample {
 				.println("Your score: " + student.getPercentage()
 						+ (student.getPercentage() >= percent ? " Keep it up! You've scored" : " Have to improve."));
 
-		biConsumer.accept(ModelUtil.getStudent(), 80);
+		biConsumer.accept(ModelUtil.getStudent(), 60);
 	}
 
 	public static void main(String[] args) {

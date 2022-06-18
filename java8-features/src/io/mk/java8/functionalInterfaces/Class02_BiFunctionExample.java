@@ -17,11 +17,7 @@ public class Class02_BiFunctionExample {
 //	};
 
 	static String callBiFunction() {
-
-		BiFunction<Integer, Integer, String> addFunction = (val1, val2) -> {
-			return String.valueOf(val1 + val2);
-		};
-
+		BiFunction<Integer, Integer, String> addFunction = (val1, val2) -> String.valueOf(val1 + val2);
 		return addFunction.apply(1, 2);
 	}
 

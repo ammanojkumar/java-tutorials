@@ -11,6 +11,7 @@ public class GroupByExample {
 
 	public static void main(String[] args) {
 		List<String> nameList = ModelUtil.getStringList();
+		System.out.println(nameList);
 		Map<String, Long> collect = nameList.stream()
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		System.out.println(collect);

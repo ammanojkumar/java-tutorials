@@ -1,7 +1,6 @@
 package io.mk.java8.other;
 
 import java.util.Optional;
-import java.util.function.Function;
 
 import io.mk.model.ModelUtil;
 import io.mk.model.Student;

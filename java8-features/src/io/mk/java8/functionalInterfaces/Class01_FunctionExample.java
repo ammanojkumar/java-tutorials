@@ -19,11 +19,7 @@ public class Class01_FunctionExample {
 //	};
 
 	static Student callFunction() {
-
-		Function<Integer, Student> stuFunction = id -> {
-			return new Student(id, "Manoj", 50);
-		};
-
+		Function<Integer, Student> stuFunction = id -> new Student(id, "Manoj", 50);
 		return stuFunction.apply(1);
 	}
 

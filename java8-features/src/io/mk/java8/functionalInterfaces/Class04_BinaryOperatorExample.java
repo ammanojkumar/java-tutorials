@@ -18,11 +18,7 @@ public class Class04_BinaryOperatorExample {
 //	};
 
 	static Integer callBinaryOperator() {
-
-		BinaryOperator<Integer> addFunction = (val1, val2) -> {
-			return val1 + val2;
-		};
-
+		BinaryOperator<Integer> addFunction = (val1, val2) -> val1 + val2;
 		return addFunction.apply(1, 2);
 	}
 

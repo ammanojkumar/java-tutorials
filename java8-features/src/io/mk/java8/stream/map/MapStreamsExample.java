@@ -38,7 +38,7 @@ public class MapStreamsExample {
 		HashMap<Integer, Student> collect = map.entrySet().stream()
 				.sorted((s1, s2) -> s1.getValue().getPercentage() - s2.getValue().getPercentage()).collect(Collectors
 						.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue, HashMap::new));
-		System.out.println("Map2Mwp: Map Value Ordered: ");
+		System.out.println("Map2Map: Map Value Ordered: ");
 		System.out.println(collect);
 	}
 

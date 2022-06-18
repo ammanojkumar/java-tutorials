@@ -4,6 +4,7 @@ public class Item {
 	private int id;
 	private String name;
 	private int price;
+	private String desc;
 
 	public Item() {
 	}
@@ -37,6 +38,14 @@ public class Item {
 
 	public void setPrice(int price) {
 		this.price = price;
+	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
 	}
 
 }

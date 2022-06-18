@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 import io.mk.model.Item;
 import io.mk.model.ModelUtil;
 
-public class ListStreams3 {
+public class CalcListStream {
 
-	public static void main(String[] args) {
+	static void calculateStream() {
 		List<Item> items = ModelUtil.getItems();
 		items.stream().map(item -> item.getPrice()).forEach(System.out::println);
 		Integer sumPrice = items.stream().collect(Collectors.summingInt(item -> item.getPrice()));
@@ -20,4 +20,9 @@ public class ListStreams3 {
 		Item maxPriceItem = items.stream().max((prod1, prod2) -> prod2.getPrice() - prod1.getPrice()).get();
 		System.out.println("Max " + maxPriceItem.getPrice());
 	}
+
+	public static void main(String[] args) {
+		calculateStream();
+	}
+
 }

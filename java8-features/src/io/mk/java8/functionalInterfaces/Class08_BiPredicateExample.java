@@ -17,12 +17,8 @@ public class Class08_BiPredicateExample {
 //	};
 
 	static void callBiPredicate() {
-		BiPredicate<Integer, Integer> bipredicate = (i1, i2) -> {
-			return i1 % i2 == 0;
-		};
-
+		BiPredicate<Integer, Integer> bipredicate = (i1, i2) -> i1 % i2 == 0;
 		System.out.println(bipredicate.test(10, 2));
-		System.out.println(bipredicate.test(10, 3));
 	}
 
 	public static void main(String[] args) {

@@ -7,3 +7,15 @@
 2022-08-06 15:43:40,688 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-08-06 15:43:40,690 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'null' encoding to copy filtered properties files.
 2022-08-06 15:43:40,691 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Manoj\Workspace\2022\github\java-tutorials\maven-springboot-archetype\src\test\resources
+2022-08-06 19:39:42,500 [Worker-43: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 19:39:42,503 [Worker-43: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'null' encoding to copy filtered properties files.
+2022-08-06 19:39:42,505 [Worker-43: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2022-08-06 19:39:42,524 [Worker-43: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 19:39:42,526 [Worker-43: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'null' encoding to copy filtered properties files.
+2022-08-06 19:39:42,526 [Worker-43: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Manoj\Workspace\2022\github\java-tutorials\maven-springboot-archetype\src\test\resources
+2022-08-06 19:39:47,665 [Worker-43: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 19:39:47,667 [Worker-43: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'null' encoding to copy filtered properties files.
+2022-08-06 19:39:47,668 [Worker-43: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 7 resources
+2022-08-06 19:39:47,674 [Worker-43: Building Workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 19:39:47,676 [Worker-43: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'null' encoding to copy filtered properties files.
+2022-08-06 19:39:47,677 [Worker-43: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Manoj\Workspace\2022\github\java-tutorials\maven-springboot-archetype\src\test\resources

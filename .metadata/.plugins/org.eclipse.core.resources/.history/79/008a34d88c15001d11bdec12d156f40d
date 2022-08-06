@@ -1,0 +1,72 @@
+package io.mk.designpattern.creational.os.builder;
+
+public class Meeting {
+
+	private Meeting(MeetingBuilder meetingBuilder) {
+
+	}
+
+	private String title;
+	private String organizer;
+	private String place;
+	private String startTime;
+	private String endTime;
+	private int numberOfAttendees;
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getOrganizer() {
+		return organizer;
+	}
+
+	public void setOrganizer(String organizer) {
+		this.organizer = organizer;
+	}
+
+	public String getPlace() {
+		return place;
+	}
+
+	public void setPlace(String place) {
+		this.place = place;
+	}
+
+	public String getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+
+	public String getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(String endTime) {
+		this.endTime = endTime;
+	}
+
+	public int getNumberOfAttendees() {
+		return numberOfAttendees;
+	}
+
+	public void setNumberOfAttendees(int numberOfAttendees) {
+		this.numberOfAttendees = numberOfAttendees;
+	}
+
+	public static class MeetingBuilder {
+
+		public Meeting build() {
+			return new Meeting(this);
+		}
+
+	}
+
+}

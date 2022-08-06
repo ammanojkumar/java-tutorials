@@ -1,0 +1,23 @@
+package io.mk.creational.designpattern.mobile.abstractfactoty;
+
+public class MobileFactory implements MobileAbstractFactory {
+
+	@Override
+	public MobileOS getMobileOS(OperatingSystem operatingSystem) {
+		return null;
+	}
+
+	@Override
+	public MobileProcessor getMobileProcessor(Processor processor) {
+		switch (processor) {
+		case SNAPDRAGON:
+			return new ProcessorSnapdragon();
+		case MEDIATEK:
+			return new ProcessorMediatek();
+		case BIONIC:
+			return new ProcessorBionic();
+		}
+		return null;
+
+	}
+}

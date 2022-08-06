@@ -1,0 +1,10 @@
+package io.mk.designpattern.creational.prototype;
+
+public class PrototypeFactoryTest {
+
+	public static void main(String[] args) {
+		Book meeting = new Book.MeetingBuilder().title("Standup").organizer("Peter").startTime("12:00pm")
+				.numberOfAttendees(10).build();
+		System.out.println(meeting);
+	}
+}

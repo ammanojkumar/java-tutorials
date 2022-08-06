@@ -1,0 +1,5 @@
+package io.mk.designpattern.creational.os.builder;
+
+public class Meeting {
+
+}

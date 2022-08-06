@@ -1,0 +1,6 @@
+package io.mk.creational.designpattern.processor.factory;
+
+public enum ProcessorEnum {
+
+	SNAPDRAGON, MEDIATEK, BIONIC
+}

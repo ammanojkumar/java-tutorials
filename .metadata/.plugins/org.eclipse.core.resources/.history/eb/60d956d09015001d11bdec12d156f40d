@@ -1,0 +1,7 @@
+package io.mk.designpattern.creational.prototype;
+
+public class BookProducer {
+
+	public static void main(String[] args) {
+	}
+}

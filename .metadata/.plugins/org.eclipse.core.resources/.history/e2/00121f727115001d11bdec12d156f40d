@@ -1,0 +1,6 @@
+package io.mk.creational.designpattern.processor.factory;
+
+public enum OperatingSystem {
+
+	ANDROID, WINDOWS, MAC
+}

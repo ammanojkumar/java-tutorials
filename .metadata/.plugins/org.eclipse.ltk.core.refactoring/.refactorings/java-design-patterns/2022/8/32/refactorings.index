@@ -1,0 +1,45 @@
+1659781139839	Rename package 'io.mk.creational.designpattern.factoty'
+1659781152867	Rename package 'io.mk.creational.designpattern.abstractfactoty'
+1659781250859	Delete elements
+1659781280833	Copy package
+1659781288447	Delete elements
+1659781299440	Copy compilation unit
+1659781301742	Delete element
+1659781342043	Rename type 'Android'
+1659781346676	Rename type 'Windows'
+1659781380989	Rename type 'MAC'
+1659781392861	Rename type 'IOS'
+1659781456396	Rename type 'Bionic'
+1659781465197	Rename type 'Mediatek'
+1659781482339	Rename type 'Snapdragon'
+1659781518128	Copy compilation units
+1659781522836	Delete elements
+1659781568021	Copy compilation unit
+1659781571373	Delete element
+1659781581775	Rename type 'MobileProcessorFactory'
+1659781714160	Rename type 'Mobile'
+1659781718965	Rename type 'Processor'
+1659781741154	Rename type 'OperatingSystem'
+1659781765991	Copy compilation unit
+1659781768807	Delete element
+1659781859336	Copy compilation unit
+1659781983738	Rename type 'MobileFactory'
+1659782576488	Copy compilation unit
+1659782613566	Delete element
+1659782725726	Copy compilation unit
+1659782852877	Rename type 'MobileEnum'
+1659782889273	Delete element
+1659783406258	Rename package 'io.mk.creational.designpattern.singleton'
+1659783416252	Rename package 'io.mk.creational.designpattern.processor.factory'
+1659783423041	Rename package 'io.mk.creational.designpattern.os.factoty'
+1659783430884	Rename package 'io.mk.creational.designpattern.mobile.abstractfactoty'
+1659793333135	Extract local variable 'build'
+1659793395155	Rename type 'BuilderTest'
+1659794207758	Copy package
+1659794219739	Rename package 'io.mk.designpattern.creational.os.builder'
+1659794229330	Rename type 'Meeting'
+1659794363171	Copy compilation unit
+1659794384729	Rename type 'BookCache'
+1659794691389	Extract local variable 'clone'
+1659794745208	Rename type 'BuilderFactoryTest'
+1659794753896	Rename type 'PrototypeFactoryTest'

@@ -1,0 +1,6 @@
+package io.mk.creational.designpattern.mobile.abstractfactoty;
+
+public enum MobileEnum {
+
+	OPERATING_SYSTEM, PROCESSOR
+}

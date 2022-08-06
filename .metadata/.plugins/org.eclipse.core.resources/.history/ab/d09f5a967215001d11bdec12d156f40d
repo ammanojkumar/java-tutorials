@@ -1,0 +1,6 @@
+package io.mk.creational.designpattern.os.factoty;
+
+public enum OperatingSystem {
+
+	ANDROID, WINDOWS, MAC
+}

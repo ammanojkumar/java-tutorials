@@ -1,0 +1,8 @@
+package io.mk.creational.designpattern.processor.factory;
+
+public interface MobileAbstractFactory {
+
+	public abstract MobileOS getMobileOS(OperatingSystem operatingSystem);
+
+	public abstract MobileProcessor getMobileProcessor(Processor processor);
+}

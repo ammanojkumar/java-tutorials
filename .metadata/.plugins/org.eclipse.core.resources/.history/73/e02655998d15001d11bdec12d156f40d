@@ -1,0 +1,9 @@
+package io.mk.designpattern.creational.os.builder;
+
+public class BuilderTest {
+
+	public static void main(String[] args) {
+		Meeting build = new Meeting.MeetingBuilder().title("Standup").organizer("Peter").startTime("12:00pm").numberOfAttendees(10)
+				.build();
+	}
+}

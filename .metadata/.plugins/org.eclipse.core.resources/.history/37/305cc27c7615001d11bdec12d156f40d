@@ -1,9 +1,0 @@
-package io.mk.creational.designpattern.processor.factory;
-
-public interface MobileProcessor {
-
-	public String getCPUClockRate();
-
-	public String getLatestSerious();
-
-}

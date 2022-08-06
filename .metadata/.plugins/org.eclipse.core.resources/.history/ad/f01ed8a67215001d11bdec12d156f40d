@@ -1,6 +1,0 @@
-package io.mk.creational.designpattern.processor.factory;
-
-public enum MobileEnum {
-
-	OPERATING_SYSTEM, PROCESSOR
-}

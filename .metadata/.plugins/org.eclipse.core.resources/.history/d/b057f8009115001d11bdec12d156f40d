@@ -1,7 +1,0 @@
-package io.mk.designpattern.creational.prototype;
-
-public class PrototypePatternTest {
-
-	public static void main(String[] args) {
-	}
-}

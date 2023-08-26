@@ -1,5 +1,6 @@
 package io.mk.java8.stream.list;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,8 +22,14 @@ public class CalcListStream {
 		System.out.println("Max " + maxPriceItem.getPrice());
 	}
 
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 		calculateStream();
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(Instant.now().toEpochMilli());
+		System.out.println(System.currentTimeMillis());
+		
 	}
 
 }

@@ -30,9 +30,9 @@ public class DateExamples {
 
 	private static void testLocalDate() {
 		LocalDate date = LocalDate.now();
-		System.out.println("\nToday		: " + date);
-		System.out.println("Yesterday	: " + date.minusDays(1));
-		System.out.println("Next Month	: " + date.plusMonths(2));
+		System.out.println("\nToday				: " + date);
+		System.out.println("Yesterday			: " + date.minusDays(1));
+		System.out.println("Next to next Month	: " + date.plusMonths(2));
 
 		LocalDateTime localDateTime = date.atTime(4, 30, 00);
 		System.out.println("localDateTime	: " + localDateTime);

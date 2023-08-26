@@ -30,11 +30,11 @@ class Football implements Sports, Entertainment {
 	}
 }
 
-class Ground implements Sports, Entertainment {
+class Cricket implements Sports, Entertainment {
 
 	@Override
 	public void printMyJob() {
-		System.out.println("My name is Football ground");
+		System.out.println("My name is Cricket");
 		Sports.super.printMyJob();
 		Entertainment.super.printMyJob();
 	}
@@ -45,8 +45,8 @@ public class DefaultMethods {
 		Sports sports = new Football();
 		sports.printMyJob();
 
-		Sports ground = new Ground();
-		ground.printMyJob();
+		Sports cricket = new Cricket();
+		cricket.printMyJob();
 
 		Sports.print();
 		Entertainment.print();

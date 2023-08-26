@@ -41,6 +41,17 @@ public class ModelUtil {
 		return map;
 	}
 
+	public static List<Book> getBooks() {
+		List<Book> books = new ArrayList<>();
+		Book b1 = new Book(1, Arrays.asList(new String[] { "AC1", "AC2", "AC3" }));
+		books.add(b1);
+		Book b2 = new Book(1, Arrays.asList(new String[] { "BC1", "BC2", "BC3" }));
+		books.add(b2);
+		Book b3 = new Book(1, Arrays.asList(new String[] { "CC1", "CC2", "CC3" }));
+		books.add(b3);
+		return books;
+	}
+
 	public static List<String> getStringList() {
 		return Arrays.asList("Manoj", "Arun", "Bala", "Arun", "Bala", "Manoj", "Raja");
 	}

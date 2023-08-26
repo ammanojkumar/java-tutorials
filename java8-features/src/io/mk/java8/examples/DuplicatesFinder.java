@@ -31,7 +31,6 @@ public class DuplicatesFinder {
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting())).entrySet().stream()
 				.filter(e -> e.getValue() > 1).map(Entry::getKey).collect(Collectors.toList());
 		System.out.println(duplicates1 + "\n" + duplicates2 + "\n" + duplicates3);
-
 	}
 
 	public static void main(String[] args) {

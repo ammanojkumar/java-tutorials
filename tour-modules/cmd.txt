@@ -1,0 +1,21 @@
+Service
+Service provider interface:	zoo.tours.api
+Service provider:			zoo.tours.reservation
+Consumer:					consumer
+Service provider:			zoo.tours.agency			
+
+javac -p mods -d serviceProviderInterfaceModule serviceProviderInterfaceModule/zoo/tours/api/*.java serviceProviderInterfaceModule/module-info.java
+jar -cvf mods/zoo.tours.api.jar -C serviceProviderInterfaceModule/ .
+
+javac -p mods -d serviceLocatorModule serviceLocatorModule/zoo/tours/reservation/*.java serviceLocatorModule/module-info.java
+jar -cvf mods/zoo.tours.reservation.jar -C serviceLocatorModule/ .
+
+javac -p mods -d consumerModule consumerModule/zoo/visitor/*.java consumerModule/module-info.java
+jar -cvf mods/zoo.visitor.jar -C consumerModule/ .
+java -p mods -m zoo.visitor/zoo.visitor.Tourist
+
+javac -p mods -d serviceProviderModule serviceProviderModule/zoo/tours/agency/*.java serviceProviderModule/module-info.java
+jar -cvf mods/zoo.tours.api.jar -C serviceProviderModule/ .
+
+if you run again changes reflected
+java -p mods -m zoo.visitor/zoo.visitor.Tourist
